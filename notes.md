@@ -22,6 +22,7 @@ Sections:
 
 Nav = glass morph slide out on mobile
 Nav = glass morph top right on tablet and larger screens
+
 ## Landing Page
 
 Sections:
