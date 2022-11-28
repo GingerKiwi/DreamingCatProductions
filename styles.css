@@ -1,12 +1,23 @@
-/*  Fonts
------
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Voltaire', sans-serif;
-*/
+/* ------------------- */
+/* Custom Properties   */
+/* ------------------- */
 
-/* Colours
------
-*/
+:root {
+    /*  Fonts ----- */
+    --font-josefin: "Josefin Sans", sans-serif;
+    --font-voltaire: "Voltaire", sans-serif;
+
+    /* Typography ----*/
+    --font-size-big: large;
+    /* Colours ----- */
+    --clr-orange1: #E7691C;
+    --clr-orange2: #F0A170;
+    --clr-silverscreen: silver;
+    --clr-black-almost: #100101;
+}
+
+
+
 
 /* ------------------- */
 /* Reset               */
@@ -71,13 +82,46 @@ select {
 Typography
 ================= */
 
+h1 {
+    font-family: var(--font-voltaire);
+    color: var(--clr-orange1);
+    font-size: large;
+}
+
+body {
+    background-color: var(--clr-black-almost);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
 
 /* =================
 Layout
 ================= */
 
+/* utility classes */
+
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
 
 /* navigation */
 
 
 /* @media */
+
