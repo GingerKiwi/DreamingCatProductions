@@ -100,6 +100,7 @@ h2 {
 body {
     background-color: var(--clr-black-almost);
     color: var(--clr-silverscreen);
+    font-family: var(--font-josefin);
 }
 
 li {
