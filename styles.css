@@ -93,8 +93,17 @@ h1 {
     padding: 0em 2em;
 }
 
+h2 {
+    color: var(--clr-silverscreen);
+}
+
 body {
     background-color: var(--clr-black-almost);
+    color: var(--clr-silverscreen);
+}
+
+li {
+    color: var(--clr-silverscreen);
 }
 
 .uppercase {
@@ -121,6 +130,10 @@ Layout
 img {
     max-width: 100%;
 }
+
+video {
+    max-width: 100%;
+}
 /* utility classes */
 
 .bg-toronto {
@@ -143,6 +156,19 @@ img {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line */
   border: 0;
+}
+
+.services-card {
+    box-shadow: 0 0 1em var(--clr-black-shadow);
+    padding: 1em;
+    background: var(--clr-orange1);
+    margin: 1em;
+}
+
+.services-card-title {
+    font-size: 1.5rem;
+    color: var(--clr-black-almost);
+    text-shadow: var(--clr-orange2) 1px 0 10px;
 }
 
 .portfolio {
