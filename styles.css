@@ -14,6 +14,7 @@
     --clr-orange2: #F0A170;
     --clr-silverscreen: silver;
     --clr-black-almost: #100101;
+    --clr-black-shadow: rgba(0,0,0,0.25);
 }
 
 
@@ -82,10 +83,14 @@ select {
 Typography
 ================= */
 
-h1 {
+h1, h2, h3 {
     font-family: var(--font-voltaire);
+    padding: 1em 0;
+}
+h1 {
     color: var(--clr-orange1);
-    font-size: large;
+    font-size: 6rem;
+    padding: 0em 2em;
 }
 
 body {
@@ -96,11 +101,31 @@ body {
     text-transform: uppercase;
 }
 
+.text-orange {
+    color: var(--clr-orange1);
+}
+
+.slogan {
+    font-size: 4rem;
+}
+
 /* =================
 Layout
 ================= */
 
+/* body {
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(200px, 300px));
+} */
+
+img {
+    max-width: 100%;
+}
 /* utility classes */
+
+.bg-toronto {
+    background-image: url(/assets/ashwini-chaudhary-monty-plhV-L829_I-unsplash.jpg);
+}
 
 .container {
     padding-inline: 2em;
@@ -120,8 +145,37 @@ Layout
   border: 0;
 }
 
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(200px, 300px));
+    padding: 1em;
+    grid-gap: 1em;
+}
+
+.portfolio-title {
+    text-align: center;
+    color: var(--clr-orange1);
+    grid-column: 1/-1;
+}
+
+.portfolio-card {
+    box-shadow: 0 0 1em var(--clr-black-shadow);
+    padding: 1em;
+    background: var(--clr-orange2);
+    margin: 1em;
+}
+
+.portfolio-card-title {
+    font-size: 1.5rem;
+    color: var(--clr-black-almost);
+}
+
+.portfolio-card-p {
+    color: var(--clr-black-almost);
+}
 /* navigation */
 
 
 /* @media */
 
+/* Need to set up grid */
